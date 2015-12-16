@@ -1,0 +1,20 @@
+'scopeName': 'source.mydsl1'
+'name': 'xtext'
+'fileTypes': ['mydsl1']
+'patterns': [
+  {
+    # this line means "look for the xtextkeywords in the repository object below"
+    'include': '#xtextkeywords'
+  }
+  {
+    'include': 'source.js'
+  }
+]
+'repository':
+  'xtextkeywords':
+    'patterns': [
+      {
+        'match': "The|works"
+        'name': 'keyword.control'
+      }
+    ]

@@ -1,0 +1,30 @@
+{
+  "name": "atom-xtext-package",
+  "main": "./lib/atom-xtext-package",
+  "version": "1.0.3",
+  "description": "An atom package for xtext",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "atom-xtext-package:toggle"
+  },
+  "repository": "https://github.com/xarvey/atom-xtext-package",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    },
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  }
+}
