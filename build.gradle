@@ -13,27 +13,38 @@ allprojects {
 
   group = "org.xtext"
   bintray.pkg.name = "$rootProject.group:$rootProject.name"
+  //TODO use xtext.team accounts
+  bintray.user = "oehme"
+  bintray.pkg.version.mavenCentralSync.user = "oehme"
 
   contacts {
-    "xtext@itemis.com" {
+    "xtext.team@gmail.com" {
       moniker "The Xtext team"
       roles "owner"
       github "xtext"
     }
-  }
-
-  //TODO create bintray and central users
-  bintray.user = "oehme"
-  bintray.pkg.version.mavenCentralSync.user = "oehme"
-
-  repositories {
-    jcenter()
+    "kwangwooheo@gmail.com" {
+      moniker "KwangWoo Heo"
+      github "kwanggy"
+    }
+    "xiao67@purdue.edu" {
+      moniker "xarvey"
+      github "xarvey"
+    }
+    "me@scottopell.com" {
+      moniker "Scott Opell"
+      github "scottopell"
+    }
   }
 }
 
 subprojects {
   apply plugin: 'eclipse'
   apply plugin: 'org.xtend.xtend'
+
+  repositories {
+    jcenter()
+  }
 
   dependencies {
     compile 'org.eclipse.xtext:org.eclipse.xtext.xtext.generator:2.9.0'
