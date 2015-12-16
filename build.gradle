@@ -13,6 +13,7 @@ allprojects {
 
   group = "org.xtext"
   bintray.user = "xtext-team"
+  bintray.pkg.name = rootProject.name
   bintray.pkg.version.mavenCentralSync.user = "xtext.team"
 
   contacts {
