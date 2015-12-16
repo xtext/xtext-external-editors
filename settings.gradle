@@ -1,0 +1,1 @@
+include 'xtext-vim', 'xtext-atom', 'xtext-sublime'
