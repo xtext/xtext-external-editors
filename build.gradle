@@ -4,7 +4,7 @@ buildscript {
   }
   dependencies {
     classpath 'com.github.oehme.sobula:sobula:0.6.6'
-    classpath 'org.xtext:xtext-gradle-plugin:2.0.7'
+    classpath 'org.xtext:xtext-gradle-plugin:2.0.8'
   }
 }
 
@@ -46,8 +46,8 @@ subprojects {
   }
 
   dependencies {
-    compile 'org.eclipse.xtext:org.eclipse.xtext.xtext.generator:2.18.0'
-    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.18.0'
+    compile 'org.eclipse.xtext:org.eclipse.xtext.xtext.generator:2.23.0'
+    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.23.0'
   }
 
   sourceCompatibility = 1.8
