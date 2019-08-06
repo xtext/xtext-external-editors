@@ -3,8 +3,8 @@ buildscript {
     jcenter()
   }
   dependencies {
-    classpath 'org.xtend:xtend-gradle-plugin:0.4.14'
     classpath 'com.github.oehme.sobula:sobula:0.6.6'
+    classpath 'org.xtext:xtext-gradle-plugin:2.0.7'
   }
 }
 
@@ -39,18 +39,18 @@ allprojects {
 
 subprojects {
   apply plugin: 'eclipse'
-  apply plugin: 'org.xtend.xtend'
+  apply plugin: 'org.xtext.xtend'
 
   repositories {
     jcenter()
   }
 
   dependencies {
-    compile 'org.eclipse.xtext:org.eclipse.xtext.xtext.generator:2.9.0'
-    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.9.0'
+    compile 'org.eclipse.xtext:org.eclipse.xtext.xtext.generator:2.18.0'
+    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.18.0'
   }
 
-  sourceCompatibility = 1.6
+  sourceCompatibility = 1.8
 
   tasks.withType(JavaCompile) {
       options.encoding = 'UTF-8'
